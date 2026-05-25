@@ -2,3 +2,6 @@ aws/
 aws/
 .venv/
 __pycache__/
+aws/
+.venv/
+__pycache__/
