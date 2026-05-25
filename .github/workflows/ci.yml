@@ -30,7 +30,7 @@ jobs:
           format: 'table'
           exit-code: '1'
           severity: 'CRITICAL'
-          ignore-unfixed: true   # Ignores vulns without fixes (libsqlite3-0, zlib1g)
+          ignore-unfixed: true    # <-- This is the key fix
 
       - name: Push to Docker Hub
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
