@@ -1,1 +1,4 @@
 aws/
+aws/
+.venv/
+__pycache__/
