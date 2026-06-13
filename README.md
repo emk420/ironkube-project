@@ -416,3 +416,15 @@ You can always set the exit code when leaks are encountered with the --exit-code
 1 - leaks or error encountered
 126 - unknown flag
 ```
+
+## Project Status
+✅ CI pipeline complete (GitHub Actions + Trivy)
+✅ ECR repository configured
+✅ EKS cluster deployed (shut down to save credits)
+✅ Manual deployment tested and working
+
+## Project Status
+✅ CI pipeline complete (GitHub Actions + Trivy)
+✅ ECR repository configured
+✅ EKS cluster deployed (shut down to save credits)
+✅ Manual deployment tested and working
