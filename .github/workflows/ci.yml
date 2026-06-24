@@ -2,9 +2,9 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main, dev ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, dev ]
 
 env:
   IMAGE_NAME: ironkube-inventory
@@ -30,7 +30,7 @@ jobs:
           format: 'table'
           exit-code: '1'
           severity: 'CRITICAL'
-          ignore-unfixed: true    # <-- This is the key fix
+          ignore-unfixed: true
 
       - name: Push to Docker Hub
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
